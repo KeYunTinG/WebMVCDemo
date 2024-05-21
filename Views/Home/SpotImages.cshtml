@@ -1,0 +1,46 @@
+﻿@model IEnumerable<WebMVCTakahiro.Models.SpotImage>
+
+@{
+    ViewData["Title"] = "SpotImages";
+}
+
+<h1>SpotImages</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+@foreach (var item in Model) {
+  <div class="col">
+    <div class="card">
+                <img src="@Url.Content(item.ImagePath)" class="card-img-top" alt="..." style="width:400px;height:auto;">
+      <div class="card-body">
+                    <h5 class="card-title">@Html.DisplayFor(modelItem => item.ImageTitle)</h5>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        @* <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> *@
+      </div>
+    </div>
+  </div>
+       @*  <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImageId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SpotId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImageTitle)
+            </td>
+            <td>
+                    <img src="@Url.Content(item.ImagePath)" alt="Image" style="width:400px;height:auto;" />
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>  *@
+}
+</div>

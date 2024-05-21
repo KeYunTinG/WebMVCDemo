@@ -1,0 +1,140 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@section Styles{
+    <style>
+
+    </style>
+}
+<main>
+
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">Album example</h1>
+                <p class="lead text-body-secondary">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+                <p>
+                    <a href="#" class="btn btn-primary my-2">Main call to action</a>
+                    <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</main>ton>
+</div>
+<div class="text-center">
+    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+@section Scripts{
+    <script>
+        // function printSomething(data) {
+        //     const promise = new Promise((resolve, reject) => {
+        //         setTimeout(() => resolve(data), 1000);
+        //     });
+        //     async function execute() {
+        //         try {
+        //             const resultA = await printSomething("a");
+        //             console.log(resultA); 
+
+        //             const resultB = await printSomething("b");
+        //             console.log(resultB); 
+
+        //             const resultC = await printSomething("c");
+        //             console.log(resultC);  
+        //         } catch (error) {
+        //             console.error(error);
+        //         }
+        //     }
+
+        //     execute();
+        // }
+
+        const ordersTable = [
+            {
+                project:
+                    '【PHILIPS 黑金剛】三合一磁吸充電系列｜一秒強勁吸附，智慧溫控晶片，簡化生活快速時尚！',
+                productOrders: [
+                    {
+                        name: '早鳥 旗艦組',
+                        price: 2990,
+                        count: 2,
+                    },
+                    {
+                        name: '早鳥 三合一充電組',
+                        price: 2390,
+                        count: 3,
+                    },
+                    {
+                        name: '早鳥 行動電源組',
+                        price: 1790,
+                        count: 4,
+                    },
+                    {
+                        name: '超早鳥 旗艦組',
+                        price: 2850,
+                        count: 7,
+                    },
+                ]
+            },
+        ];
+        console.log(ordersTable[0].project);
+        console.log(ordersTable[0].productOrders[0].name);
+    </script>
+}
