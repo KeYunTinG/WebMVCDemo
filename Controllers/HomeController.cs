@@ -49,7 +49,16 @@ namespace WebMVCTakahiro.Controllers
 
         public IActionResult Hello()
         {
+            System.Threading.Thread.Sleep(3000);
             return Content("<h2>Hello World</h2>", "text/html", System.Text.Encoding.UTF8);
+        }
+        public IActionResult address()
+        {
+            return View();
+        }
+        public IActionResult Register()
+        {
+            return View();
         }
     }
 }
